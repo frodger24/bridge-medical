@@ -1,0 +1,22 @@
+.services-title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0; /* Remove default margin */
+  padding-top: 45px; /* Add space below the header */
+}
+
+.services-section {
+  width: 100%;
+  height: calc(100vh - 61px); /* Full viewport height minus the header height */
+  background-color: #1466cc;
+  box-sizing: border-box; /* Ensure padding/border fits within dimensions */
+  padding-top: 61px; /* Offset the fixed header height */
+}
+
+.services-list {
+  display: flex;
+  flex-direction: row;
+}
