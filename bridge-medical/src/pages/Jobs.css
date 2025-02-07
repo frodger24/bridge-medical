@@ -1,0 +1,55 @@
+.jobs-section {
+  width: 100%;
+  height: calc(100vh - 61px); /* Full viewport height minus the header */
+  background-color: #1466cc;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column; /* Stack title and wrapper vertically */
+  align-items: center; /* Center horizontally */
+  padding-top: 61px;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 5%;
+  color: white;
+}
+
+.jobs-title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  padding: 0;
+  padding-top: 15px;
+}
+
+.jobs-float {
+  width: 60%;
+  margin: 0 auto; /* Center the container itself */
+  text-align: left; /* Left-align its contents */
+  padding-left: 0;
+}
+
+.career-title {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 0 0 10px 0; /* Set margin for spacing if desired */
+  text-align: left; /* Make sure the text is left-aligned */
+  color: white;
+}
+
+.jobs-para {
+  margin: 0; /* or give it a bottom margin if needed */
+  padding-top: 15px;
+  text-align: left; /* Ensure left-aligned text */
+  font-size: 25px;
+  border-radius: 5px;
+}
+
+.open-title {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: left; /* Make sure the text is left-aligned */
+  color: white;
+  padding-top: 10px;
+}

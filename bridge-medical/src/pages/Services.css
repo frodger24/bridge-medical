@@ -1,22 +1,57 @@
+.services-section {
+  width: 100%;
+  height: calc(100vh - 61px); /* Full viewport height minus the header */
+  background-color: #1466cc;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column; /* Stack title and wrapper vertically */
+  align-items: center; /* Center horizontally */
+  padding-top: 61px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .services-title {
   text-align: center;
   color: #ffffff;
   font-size: 45px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0; /* Remove default margin */
-  padding-top: 45px; /* Add space below the header */
+  margin-bottom: 20px;
+  padding: 0;
 }
 
-.services-section {
-  width: 100%;
-  height: calc(100vh - 61px); /* Full viewport height minus the header height */
-  background-color: #1466cc;
-  box-sizing: border-box; /* Ensure padding/border fits within dimensions */
-  padding-top: 61px; /* Offset the fixed header height */
+.list-wrapper {
+  display: flex;
+  flex-direction: column; /* Stack the list and textbox vertically */
+  align-items: center; /* Center items horizontally */
+  width: fit-content; /* Shrinks to fit the list width */
 }
 
 .services-list {
-  display: flex;
-  flex-direction: row;
+  list-style: none;
+  display: flex; /* Arrange items in a row */
+  gap: 50px; /* Space between items */
+  padding: 0;
+  margin: 0 0 20px 0; /* Add spacing below the list */
+  font-size: 30px;
+}
+
+.services-list li {
+  background: white;
+  color: #1466cc;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.services-textbox {
+  background-color: white;
+  color: #1466cc;
+  padding: 15px;
+  border-radius: 5px;
+  width: 80%; /* Match the width of the parent container */
+  height: 100%;
+  text-align: center;
+  font-size: 20px;
 }

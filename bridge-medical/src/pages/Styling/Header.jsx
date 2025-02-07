@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import "./Header.css";
 import logo from "../../assets/images/bridge-medical-logo.png";
+import footer from "./Footer";
 
 const Header = () => {
   return (
@@ -26,7 +27,7 @@ const Header = () => {
           </NavLink>
         </li>
         <li>
-          <a href="#contact" className="active-link">
+          <a href="#footer" className="active-link">
             Contact
           </a>
         </li>

@@ -48,4 +48,6 @@ h1 {
   max-width: 800px; /* Limit the width */
   max-height: 600px; /* Limit the height */
   font-size: 30px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
 }
