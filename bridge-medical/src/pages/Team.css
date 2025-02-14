@@ -1,0 +1,52 @@
+.team-section {
+  width: 100%;
+  height: calc(100vh - 61px); /* Full viewport height minus the header */
+  background-color: #1466cc;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column; /* Stack title and wrapper vertically */
+  align-items: center; /* Center horizontally */
+  padding-top: 61px;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 5%;
+  color: white;
+}
+
+.team-title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  padding: 0;
+  padding-top: 15px;
+}
+
+.team-float {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196f3;
+  padding: 10px;
+}
+
+.job-tile {
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.name-title {
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.team-pic {
+  max-width: 300px;
+  max-height: 300px;
+}
