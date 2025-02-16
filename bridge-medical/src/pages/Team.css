@@ -19,7 +19,7 @@
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 20px;
-  padding: 15px 0 0 0;
+  padding: 5% 0 0 0;
 }
 
 .team-float {
@@ -106,4 +106,22 @@ td {
 }
 th {
   background-color: #444;
+}
+
+.prov-title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  padding: 5px 0 0 0;
+}
+
+.home-pic {
+  width: 100%; /* Ensure the image spans the full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 40vh; /* Limit the height to 80% of the viewport height */
+  object-fit: cover; /* Crop the image gracefully if necessary */
+  padding-top: 61px;
 }

@@ -51,8 +51,13 @@ const Team = () => {
           </div>
         </div>
       </div>
+      <img
+        className="home-pic"
+        src="src\assets\images\homepage-image.jpg"
+        alt="Psychologist talking to patient"
+      ></img>
       <div className="provider-section">
-        <h1 className="team-title">Our Providers</h1>
+        <h1 className="prov-title">Our Providers</h1>
         <div className="provider-sec">
           <div class="container">
             <div class="table-container">

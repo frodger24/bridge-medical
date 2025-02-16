@@ -23,7 +23,7 @@ h1 {
 .home-pic {
   width: 100%; /* Ensure the image spans the full width of its container */
   height: auto; /* Maintain aspect ratio */
-  max-height: 70vh; /* Limit the height to 80% of the viewport height */
+  max-height: 40vh; /* Limit the height to 80% of the viewport height */
   object-fit: cover; /* Crop the image gracefully if necessary */
 }
 
