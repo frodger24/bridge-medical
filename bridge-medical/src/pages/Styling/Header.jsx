@@ -1,33 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import "./Header.css";
 import logo from "../../assets/images/bridge-medical-logo.png";
-import footer from "./Footer";
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <header className="top-nav-bar" aria-label="Main Navigation">
       <Link to="/home">
         <img className="img-logo" src={logo} alt="Bridge Medical logo" />
       </Link>
-      <ul className="top-nav-bar-items">
+
+      {/* Hamburger Button - Only for Mobile */}
+      <button className="menu-button" onClick={toggleMenu}>
+        ☰
+      </button>
+
+      <ul className={`top-nav-bar-items ${menuOpen ? "show-menu" : ""}`}>
         <li>
-          <NavLink to="/team" className="active-link">
+          <NavLink
+            to="/team"
+            className="active-link"
+            onClick={() => setMenuOpen(false)}
+          >
             Team
           </NavLink>
         </li>
         <li>
-          <NavLink to="/services" className="active-link">
+          <NavLink
+            to="/services"
+            className="active-link"
+            onClick={() => setMenuOpen(false)}
+          >
             Services
           </NavLink>
         </li>
         <li>
-          <NavLink to="/jobs" className="active-link">
+          <NavLink
+            to="/jobs"
+            className="active-link"
+            onClick={() => setMenuOpen(false)}
+          >
             Available Jobs
           </NavLink>
         </li>
         <li>
-          <a href="#footer" className="active-link">
+          <a
+            href="#footer"
+            className="active-link"
+            onClick={() => setMenuOpen(false)}
+          >
             Contact
           </a>
         </li>
