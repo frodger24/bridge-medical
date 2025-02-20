@@ -69,32 +69,6 @@ body {
   margin-left: auto;
 }
 
-li {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-.full-clickable-link {
-  display: block;
-  width: 100%;
-  padding: 12px 20px;
-  box-sizing: border-box;
-  text-decoration: none;
-  color: #1466cc;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center; /* Always center text */
-}
-
-.full-clickable-link:hover,
-.full-clickable-link:active {
-  background-color: #1466cc;
-  color: white;
-  border-radius: 8px;
-  transition: background-color 0.2s ease;
-}
-
 /* Mobile Styles */
 @media (max-width: 768px) {
   .top-nav-bar {
@@ -114,16 +88,39 @@ li {
     top: 88px;
     right: 0;
     background-color: white;
-    padding: 15px;
+    padding: 0;
     z-index: 1000;
     width: 100%;
     border: 1px solid #ccc;
-    align-items: center; /* Center menu items horizontally */
-    text-align: center; /* Text inside links centered */
   }
 
   .top-nav-bar-items.show-menu {
     display: flex;
+  }
+
+  .top-nav-bar-items li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .full-clickable-link {
+    display: block;
+    width: 100%;
+    padding: 15px 0; /* Even padding */
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #1466cc;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .full-clickable-link:hover,
+  .full-clickable-link:active {
+    background-color: #1466cc;
+    color: white;
+    transition: background-color 0.2s ease;
+    border-radius: 0; /* Remove radius for full-width feel */
   }
 
   .img-logo {
