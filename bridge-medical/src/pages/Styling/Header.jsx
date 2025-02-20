@@ -25,7 +25,7 @@ const Header = () => {
         <li>
           <NavLink
             to="/team"
-            className="active-link"
+            className="full-clickable-link"
             onClick={() => setMenuOpen(false)}
           >
             Team
@@ -34,7 +34,7 @@ const Header = () => {
         <li>
           <NavLink
             to="/services"
-            className="active-link"
+            className="full-clickable-link"
             onClick={() => setMenuOpen(false)}
           >
             Services
@@ -43,7 +43,7 @@ const Header = () => {
         <li>
           <NavLink
             to="/jobs"
-            className="active-link"
+            className="full-clickable-link"
             onClick={() => setMenuOpen(false)}
           >
             Available Jobs
@@ -52,7 +52,7 @@ const Header = () => {
         <li>
           <a
             href="#footer"
-            className="active-link"
+            className="full-clickable-link"
             onClick={() => setMenuOpen(false)}
           >
             Contact

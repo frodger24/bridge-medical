@@ -61,7 +61,7 @@ body {
 }
 
 .menu-button {
-  display: none; /* Hidden on desktop */
+  display: none;
   font-size: 30px;
   background: none;
   border: none;
@@ -69,7 +69,33 @@ body {
   margin-left: auto;
 }
 
-/* Mobile Responsive Styles */
+li {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.full-clickable-link {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #1466cc;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center; /* Always center text */
+}
+
+.full-clickable-link:hover,
+.full-clickable-link:active {
+  background-color: #1466cc;
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+/* Mobile Styles */
 @media (max-width: 768px) {
   .top-nav-bar {
     flex-direction: row;
@@ -78,25 +104,26 @@ body {
   }
 
   .menu-button {
-    display: block; /* Show on mobile */
+    display: block;
   }
 
   .top-nav-bar-items {
-    display: none; /* Hide by default */
+    display: none;
     flex-direction: column;
     position: absolute;
-    top: 80px;
+    top: 88px;
     right: 0;
     background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
     z-index: 1000;
+    width: 100%;
+    border: 1px solid #ccc;
+    align-items: center; /* Center menu items horizontally */
+    text-align: center; /* Text inside links centered */
   }
 
   .top-nav-bar-items.show-menu {
-    display: flex; /* Show when menuOpen is true */
+    display: flex;
   }
 
   .img-logo {
