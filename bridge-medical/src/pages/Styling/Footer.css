@@ -6,6 +6,7 @@
   overflow-x: hidden;
   bottom: 0;
   aspect-ratio: auto;
+  position: static;
 }
 
 .footer-content {
