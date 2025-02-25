@@ -9,27 +9,27 @@ body {
 }
 
 .img-logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1000;
-  max-width: 100%;
+  max-width: 150px;
   height: auto;
+  transition: transform 0.3s ease-in-out;
 }
 
 .top-nav-bar {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 30px;
+  padding: 15px 30px; /* Adjust padding */
   background-color: white;
   border-bottom: 1px solid #ccc;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between; /* Ensures logo stays on the left */
   align-items: center;
   box-sizing: border-box;
   z-index: 500;
+}
+
+.logo-container {
+  flex-shrink: 0;
 }
 
 .top-nav-bar-items {
@@ -42,18 +42,42 @@ body {
   font-size: 25px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
+  min-width: 300px;
 }
 
+.full-clickable-link,
 .active-link {
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
   color: #1466cc;
-  padding: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-.active-link:hover {
-  color: rgb(255, 255, 255);
-  background-color: #1466cc;
+.full-clickable-link::before,
+.active-link::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -10px;
+  right: -10px;
+  bottom: -5px;
+  background-color: transparent;
   border-radius: 10px;
-  transition: background-color 0.3s ease;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.full-clickable-link:hover::before,
+.active-link:hover::before {
+  background-color: #1466cc;
+}
+
+.full-clickable-link:hover,
+.active-link:hover {
+  color: white;
 }
 
 .top-nav-bar-items a {
@@ -106,7 +130,7 @@ body {
   .full-clickable-link {
     display: block;
     width: 100%;
-    padding: 15px 0; /* Even padding */
+    padding: 15px 0;
     box-sizing: border-box;
     text-decoration: none;
     color: #1466cc;
@@ -120,12 +144,55 @@ body {
     background-color: #1466cc;
     color: white;
     transition: background-color 0.2s ease;
-    border-radius: 0; /* Remove radius for full-width feel */
+    border-radius: 10px;
   }
 
   .img-logo {
     position: static;
     transform: none;
     max-width: 120px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .img-logo {
+    max-width: 120px;
+  }
+
+  .top-nav-bar-items {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-nav-bar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .top-nav-bar-items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 88px;
+    right: 0;
+    background-color: white;
+    padding: 0;
+    z-index: 1000;
+    width: 100%;
+    border: 1px solid #ccc;
+  }
+
+  .top-nav-bar-items.show-menu {
+    display: flex;
+  }
+
+  .logo-container {
+    margin-left: 10px;
   }
 }
