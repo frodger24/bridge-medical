@@ -52,3 +52,59 @@
   color: white;
   padding-top: 10px;
 }
+
+@media screen and (max-width: 768px) {
+  /* Targets all mobile devices */
+  .jobs-section {
+    width: 100%;
+    min-height: 100vh; /* Ensure full height */
+    padding: 80px 5% 20px; /* Add top padding to clear the header */
+    text-align: center;
+    box-sizing: border-box; /* Prevents padding from affecting layout */
+  }
+
+  .jobs-title {
+    font-size: 32px; /* Scales well on mobile */
+    margin-top: 10px; /* Small gap from the header */
+    padding: 10px 0; /* Adjust spacing */
+  }
+
+  .jobs-float {
+    width: 90%; /* Keeps text readable without stretching too wide */
+    max-width: 500px; /* Prevents it from getting too big on large mobiles */
+    text-align: center; /* Center-align text for readability */
+    padding: 0;
+    margin: 0 auto; /* Keeps content centered */
+  }
+
+  .career-title,
+  .open-title {
+    font-size: 24px; /* Resize for readability on small screens */
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .jobs-para {
+    font-size: 18px; /* Optimal text size for readability */
+    text-align: center;
+    padding: 10px 0;
+    line-height: 1.5; /* Improves text readability */
+  }
+}
+
+/* Extra adjustments for very small screens (e.g., iPhone SE) */
+@media screen and (max-width: 375px) {
+  .jobs-title {
+    font-size: 28px; /* Reduce slightly for very small screens */
+  }
+
+  .career-title,
+  .open-title {
+    font-size: 22px; /* Scale down titles */
+  }
+
+  .jobs-para {
+    font-size: 16px; /* Ensure readability on tiny screens */
+    padding: 10px 5%; /* Keep space around the text */
+  }
+}

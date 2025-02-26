@@ -39,7 +39,7 @@
   }
 
   .legal-words {
-    padding-left: 0;
+    padding-left: 5%;
   }
 }
 
@@ -54,5 +54,6 @@
   .legal-words {
     font-size: 12px;
     padding: 0 5px;
+    padding-left: 5%;
   }
 }
