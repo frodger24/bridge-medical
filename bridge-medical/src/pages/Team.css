@@ -125,3 +125,149 @@ th {
   object-fit: cover; /* Crop the image gracefully if necessary */
   padding-top: 61px;
 }
+
+@media screen and (max-width: 768px) {
+  /* Target all mobile screens */
+  .team-section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px 5% 20px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .team-title {
+    font-size: 28px; /* Scale down title */
+    margin-top: 10px;
+    padding: 10px 0;
+  }
+
+  /* Adjust Team Grid for Mobile */
+  .team-float {
+    display: flex;
+    flex-direction: column; /* Stack team members vertically */
+    gap: 15px;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .job-tile {
+    width: 90%;
+    max-width: 350px; /* Limit width for better look */
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .team-pic {
+    width: 100px; /* Smaller image */
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .name-title {
+    font-size: 18px;
+    padding-top: 8px;
+    color: black;
+  }
+
+  .job-title {
+    font-size: 14px;
+    font-style: italic;
+    color: #333;
+    padding-bottom: 8px;
+  }
+
+  .arrow-link {
+    font-size: 24px;
+    color: #1466cc;
+  }
+
+  /* Provider Section */
+  .provider-section {
+    width: 100%;
+    padding: 40px 5%;
+  }
+
+  .prov-title {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  /* Table adjustments */
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .table-container {
+    width: 100%;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    padding: 10px;
+    border-radius: 8px;
+    background-color: white;
+  }
+
+  table {
+    width: 100%;
+    font-size: 14px; /* Make text readable */
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f4f4f4;
+  }
+
+  /* Responsive Image */
+  .home-pic {
+    max-height: 30vh;
+    padding-top: 20px;
+  }
+}
+
+/* Extra adjustments for very small screens like iPhone SE */
+@media screen and (max-width: 375px) {
+  .team-title {
+    font-size: 24px;
+  }
+
+  .job-tile {
+    width: 95%;
+  }
+
+  .team-pic {
+    width: 80px;
+    height: 80px;
+  }
+
+  .name-title {
+    font-size: 16px;
+  }
+
+  .job-title {
+    font-size: 13px;
+  }
+
+  .arrow-link {
+    font-size: 20px;
+  }
+
+  .prov-title {
+    font-size: 22px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+}

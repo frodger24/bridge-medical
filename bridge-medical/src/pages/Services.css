@@ -56,3 +56,63 @@
   text-align: center;
   font-size: 20px;
 }
+
+@media screen and (max-width: 768px) {
+  /* Target all mobile devices */
+  .services-section {
+    width: 100%;
+    min-height: 100vh; /* Ensure full height */
+    padding: 80px 5% 20px; /* Top padding prevents overlap with header */
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .services-title {
+    font-size: 32px; /* Adjusted for mobile readability */
+    margin-top: 10px;
+    padding: 10px 0;
+  }
+
+  .list-wrapper {
+    width: 100%;
+  }
+
+  .services-list {
+    display: flex;
+    flex-direction: column; /* Stack list items vertically */
+    gap: 15px; /* Reduce gap for mobile */
+    font-size: 22px; /* Adjust font size */
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .services-list li {
+    padding: 12px;
+    font-size: 18px; /* Smaller text */
+    width: 100%;
+    max-width: 300px; /* Prevents full-width buttons */
+    margin: 0 auto;
+  }
+
+  .services-textbox {
+    width: 90%; /* Make sure text box scales well */
+    font-size: 18px;
+    padding: 12px;
+  }
+}
+
+/* Additional adjustments for extra small screens like iPhone SE */
+@media screen and (max-width: 375px) {
+  .services-title {
+    font-size: 28px;
+  }
+
+  .services-list li {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .services-textbox {
+    font-size: 16px;
+  }
+}
