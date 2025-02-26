@@ -89,8 +89,8 @@
   gap: 20px;
 }
 .table-container {
-  background-color: #333;
-  color: #fff;
+  background-color: white;
+  color: black;
   padding: 10px;
   border-radius: 8px;
 }
@@ -105,7 +105,7 @@ td {
   text-align: left;
 }
 th {
-  background-color: #444;
+  background-color: white;
 }
 
 .prov-title {

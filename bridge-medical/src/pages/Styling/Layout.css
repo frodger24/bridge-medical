@@ -12,12 +12,7 @@ body {
   min-height: 100vh;
 }
 
-.page-content {
-  flex-grow: 1;
-  min-height: 100vh;
-  height: 100%;
-}
-
-Footer {
-  position: absolute;
+/* This container grows to fill available space */
+.content-container {
+  flex: 1;
 }

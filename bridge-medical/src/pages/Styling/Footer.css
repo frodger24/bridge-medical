@@ -4,9 +4,8 @@
   box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
   padding: 10px 0;
   overflow-x: hidden;
-  bottom: 0;
-  aspect-ratio: auto;
-  position: static;
+  position: static; /* Ensure footer is in the normal flow */
+  margin-top: auto;
 }
 
 .footer-content {
@@ -29,10 +28,31 @@
   font-weight: bold;
 }
 
-/* Mobile bigger view size */
-@media only screen and (min-width: 300px) and (max-width: 728px) {
-  /* show element on medium-sized screens */
-  .footer {
-    position: static;
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr; /* Collapse into one column */
+    gap: 1.5rem;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .legal-words {
+    padding-left: 0;
+  }
+}
+
+/* Further adjustments for very small screens (300px - 400px) */
+@media (max-width: 400px) {
+  .footer-content {
+    font-size: 14px;
+    gap: 1rem;
+    padding: 8px;
+  }
+
+  .legal-words {
+    font-size: 12px;
+    padding: 0 5px;
   }
 }
