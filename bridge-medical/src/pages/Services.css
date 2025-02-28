@@ -1,6 +1,6 @@
-.services-section {
+.team-section {
   width: 100%;
-  height: calc(100vh - 61px);
+  min-height: 100vh;
   background-color: #1466cc;
   box-sizing: border-box;
   display: flex;
@@ -8,9 +8,10 @@
   align-items: center;
   padding-top: 61px;
   font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  position: relative;
 }
-
-.services-title {
+.team-title {
   text-align: center;
   color: #ffffff;
   font-size: 50px;
@@ -19,117 +20,226 @@
   margin-bottom: 20px;
   padding: 5% 0 0 0;
 }
-
-.list-wrapper {
+.team-float {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 90%;
+  justify-items: center;
+  margin-bottom: 80px;
+}
+.job-tile {
+  background-color: white;
+  text-align: center;
+  padding: 40px 10px;
+  font-size: 10px;
+  border-radius: 10px;
+  width: 250px;
+  position: relative;
+}
+.team-pic {
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 10px;
+}
+.name-title {
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  padding: 0 10px;
+}
+.job-title {
+  font-size: 15px;
+  color: black;
+  padding-bottom: 10px;
+  font-style: oblique;
+}
+.arrow-link {
+  font-size: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  color: #1466cc;
+}
+.home-pic {
+  width: 100%;
+  height: auto;
+  max-height: 40vh;
+  object-fit: cover;
+  display: block;
+  clear: both;
+  padding-top: 61px;
+  margin-top: 100px;
+  position: relative;
+  z-index: 1;
+}
+.provider-section {
+  width: 100%;
+  background-color: #1466cc;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: fit-content;
-}
-
-.services-list {
-  list-style: none;
-  display: flex;
-  gap: 50px;
-  padding: 0;
-  margin: 0 0 20px 0;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-.services-list li {
-  background: white;
-  color: #1466cc;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-weight: bold;
-  text-align: center;
-  cursor: pointer;
-  transition: background 0.3s, color 0.3s;
-}
-
-.services-list li.active {
-  background: #0e4b99;
+  padding: 20px 0;
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
+  height: fit-content;
+  margin-bottom: 0;
 }
-
-.services-textbox {
-  background-color: white;
-  color: #1466cc;
-  padding: 15px;
-  border-radius: 5px;
-  width: 80%;
-  max-height: 40vh;
-  min-height: 150px;
+.prov-title {
   text-align: center;
-  font-size: 20px;
-  overflow-y: auto;
-  word-wrap: break-word;
-  transition: opacity 0.5s ease-in-out;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  padding: 5px 0 0 0;
 }
-
+.container {
+  display: flex;
+  gap: 20px;
+}
+.provider-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+.arrow-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 2rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.prev-arrow {
+  left: 10px;
+}
+.next-arrow {
+  right: 10px;
+}
+.table-container {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 8px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 6px;
+  border: 1px solid #555;
+  text-align: left;
+  font-size: 14px;
+}
+th {
+  background-color: white;
+}
+.provider-sec {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  white-space: nowrap;
+  padding: 0 5vw;
+  scroll-behavior: smooth;
+  width: 100vw;
+  justify-content: start;
+  scroll-padding: 5vw;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin-bottom: 0;
+}
+.provider-sec::-webkit-scrollbar {
+  display: none;
+}
+.table-container {
+  min-width: 90vw;
+  max-width: 90vw;
+  background-color: white;
+  color: black;
+  padding: 15px;
+  border-radius: 8px;
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  text-align: center;
+}
+.table-container:first-child {
+  margin-left: 5vw;
+}
+.table-container:last-child {
+  margin-right: 5vw;
+}
 @media screen and (max-width: 768px) {
-  .services-section {
-    width: 100%;
-    min-height: 100vh;
-    padding: 80px 5% 20px;
-    text-align: center;
-    box-sizing: border-box;
+  .team-float {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 100px;
   }
-  .services-title {
-    font-size: 32px;
-    margin-top: 10px;
-    padding: 10px 0;
+  .provider-sec {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding: 0 5vw;
+    scroll-padding: 5vw;
+    margin-bottom: 0;
   }
-  .list-wrapper {
-    width: 100%;
-  }
-  .services-list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    font-size: 22px;
-    width: 90%;
-    margin: 0 auto 20px auto;
-  }
-  .services-list li {
-    padding: 12px;
-    font-size: 18px;
-    width: 100%;
-    max-width: 300px;
+  .table-container {
+    min-width: 88vw;
+    max-width: 88vw;
     margin: 0 auto;
-  }
-  .services-textbox {
-    width: 90%;
-    font-size: 18px;
-    padding: 12px;
-    margin-top: 20px;
-    transition: none;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .services-title {
-    font-size: 28px;
-  }
-  .services-list li {
-    font-size: 16px;
     padding: 10px;
   }
-  .services-textbox {
-    font-size: 16px;
+  th,
+  td {
+    font-size: 11px;
+    padding: 4px;
+  }
+  .prov-title {
+    font-size: 32px;
+  }
+  .provider-section {
+    padding-bottom: 0;
+  }
+  .arrow-btn {
+    display: none;
   }
 }
-
 @media screen and (max-width: 480px) {
-  .services-textbox {
-    max-height: 30vh;
-    font-size: 16px;
-    padding: 12px;
-    margin-top: 25px;
+  .team-float {
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
   }
-  .services-list {
-    gap: 20px;
-    margin-bottom: 25px;
+  .home-pic {
+    margin-top: 160px;
+  }
+  .table-container {
+    min-width: 92vw;
+    max-width: 92vw;
+    padding: 8px;
+  }
+  th,
+  td {
+    font-size: 10px;
+    padding: 3px;
+  }
+  .prov-title {
+    font-size: 28px;
   }
 }
