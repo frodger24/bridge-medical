@@ -13,9 +13,12 @@
   margin: 0 auto;
   text-align: left;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  padding: 5px;
+  /* 3 columns so "Contact", empty (if desired), and "Hours" line up 
+     with Manhattan, Bronx, Queens */
+  grid-template-columns: repeat(3, 1fr);
+  /* Reduce gap so the 3rd column is closer to the center */
+  gap: 1.5rem;
+  padding: 5px 10%;
   color: black;
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
@@ -23,13 +26,20 @@
 }
 
 .contact-sec {
-  padding-left: 20px;
+  grid-column: 1; /* First column */
+  padding-left: 0;
+}
+
+.hours-sec {
+  grid-column: 3; /* Third column, aligns with Queens */
+  text-align: left; /* Ensure text is not pinned to the right */
 }
 
 .address-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  /* Match the gap so columns align across rows */
+  gap: 1.5rem;
   padding: 1rem 10%;
   text-align: left;
   color: black;
@@ -49,7 +59,8 @@
 .map-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  /* Match the same gap */
+  gap: 1.5rem;
   padding: 1rem 10%;
 }
 
@@ -69,23 +80,25 @@
   font-weight: bold;
 }
 
-/* Responsive Styles for Mobile */
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .footer-content {
     grid-template-columns: 1fr;
     gap: 1.5rem;
-    padding: 10px;
+    padding: 10px 5%;
     font-size: 16px;
     text-align: center;
   }
   .address-section {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
     padding: 1rem 5%;
     font-size: 16px;
     text-align: center;
   }
   .map-section {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
     padding: 1rem 5%;
   }
   .legal-words {
@@ -93,18 +106,19 @@
   }
 }
 
-/* Further adjustments for very small screens (300px - 400px) */
 @media (max-width: 400px) {
   .footer-content {
     font-size: 14px;
     gap: 1rem;
-    padding: 8px;
+    padding: 8px 5%;
   }
   .address-section {
     font-size: 14px;
+    gap: 1rem;
     padding: 1rem 5%;
   }
   .map-section {
+    gap: 1rem;
     padding: 1rem 5%;
   }
   .legal-words {

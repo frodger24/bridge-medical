@@ -95,6 +95,7 @@ body {
 
 @media (max-width: 768px) {
   .top-nav-bar {
+    width: 100%;
     flex-direction: row;
     justify-content: space-between;
     padding: 12px;
