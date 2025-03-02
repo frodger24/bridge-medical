@@ -38,6 +38,11 @@
   width: 250px;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .job-tile {
+    cursor: pointer;
+  }
+}
 .team-pic {
   max-width: 250px;
   max-height: 250px;
@@ -246,4 +251,50 @@ th {
     width: 100%;
     margin-bottom: 80px;
   }
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  max-width: 85%;
+  max-height: 90%;
+  overflow-y: auto;
+  text-align: center;
+  margin: 40px;
+}
+.popup-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 480px) {
+  .modal-content {
+    width: 80%;
+    padding: 15px;
+    margin: 40px;
+  }
+}
+.modal-content h2 {
+  font-size: 24px;
+}
+.modal-content h3 {
+  font-size: 20px;
+}
+.modal-content p {
+  font-size: 18px;
+  font-style: normal;
 }
