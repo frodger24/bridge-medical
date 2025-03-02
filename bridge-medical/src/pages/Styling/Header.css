@@ -17,12 +17,12 @@ body {
 .top-nav-bar {
   position: fixed;
   top: 0;
-  width: 100%;
-  padding: 12px 20px; /* Adjusted padding for smaller screens */
+  width: calc(100% - 17px);
+  padding: 12px 20px;
   background-color: white;
   border-bottom: 1px solid #ccc;
   display: flex;
-  justify-content: space-between; /* Ensures logo stays on the left */
+  justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
   z-index: 500;
@@ -39,7 +39,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  font-size: 20px; /* Reduced for smaller screens */
+  font-size: 20px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   min-width: 250px;
@@ -93,18 +93,15 @@ body {
   margin-left: auto;
 }
 
-/* Mobile Styles */
 @media (max-width: 768px) {
   .top-nav-bar {
     flex-direction: row;
     justify-content: space-between;
     padding: 12px;
   }
-
   .menu-button {
     display: block;
   }
-
   .top-nav-bar-items {
     display: none;
     flex-direction: column;
@@ -117,16 +114,13 @@ body {
     width: 100%;
     border: 1px solid #ccc;
   }
-
   .top-nav-bar-items.show-menu {
     display: flex;
   }
-
   .top-nav-bar-items li {
     width: 100%;
     text-align: center;
   }
-
   .full-clickable-link {
     display: block;
     width: 100%;
@@ -138,7 +132,6 @@ body {
     font-weight: bold;
     text-align: center;
   }
-
   .full-clickable-link:hover,
   .full-clickable-link:active {
     background-color: #1466cc;
@@ -146,7 +139,6 @@ body {
     transition: background-color 0.2s ease;
     border-radius: 10px;
   }
-
   .img-logo {
     position: static;
     transform: none;
@@ -154,27 +146,22 @@ body {
   }
 }
 
-/* Small Phones (300px - 400px) */
 @media (max-width: 400px) {
   .top-nav-bar {
     padding: 10px;
   }
-
   .menu-button {
     font-size: 26px;
   }
-
   .top-nav-bar-items {
     top: 50px;
     font-size: 18px;
   }
-
   .full-clickable-link {
     font-size: 16px;
     padding: 10px 0;
   }
-
   .img-logo {
-    max-width: 80px; /* Smaller logo for small phones */
+    max-width: 80px;
   }
 }
