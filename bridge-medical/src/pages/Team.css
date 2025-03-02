@@ -189,7 +189,6 @@ th {
 }
 @media screen and (max-width: 768px) {
   .team-float {
-    display: grid;
     grid-template-columns: repeat(2, minmax(250px, 1fr));
     gap: 20px;
     margin-bottom: 100px;
@@ -274,6 +273,19 @@ th {
   overflow-y: auto;
   text-align: center;
   margin: 40px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+}
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+.modal-content::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+.modal-content::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 .popup-img {
   max-width: 100%;
@@ -285,6 +297,13 @@ th {
   .modal-content {
     width: 80%;
     padding: 15px;
+    margin: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal-content {
+    width: 500px;
+    padding: 30px;
     margin: 40px;
   }
 }
