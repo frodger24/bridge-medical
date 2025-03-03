@@ -1,7 +1,8 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../assets/images/bridge-medical-logo.png";
 import "./header.css";
 import { useState } from "react";
+
+const logo = "/bridge-medical/assets/images/bridge-medical-logo.png";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,7 +16,6 @@ const Header = () => {
         </Link>
       </div>
 
-      {/* Hamburger Button - Only for Mobile */}
       <button className="menu-button" onClick={toggleMenu}>
         ☰
       </button>

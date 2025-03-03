@@ -1,117 +1,42 @@
-import React, { useState, useRef, useEffect } from "react";
-import { FaLongArrowAltRight } from "react-icons/fa";
-import Layout from "./Styling/Layout";
+import React from "react";
+import { Link } from "react-router-dom";
 import "./Home.css";
-import "./Team.css";
-import malcolmProfile from "../assets/images/malcolm-profile.jpg";
-import anthonyProfile from "../assets/images/anthony-profile.jpg";
-import jacobProfile from "../assets/images/jacob-profile.jpg";
-import spiegelmanProfile from "../assets/images/spiegelman-profile.jpg";
-import homepageImage from "../assets/images/homepage-image.jpg";
+import Layout from "./Styling/Layout";
 
-const Team = () => {
-  const scrollRef = useRef(null);
-  const [popupData, setPopupData] = useState(null);
-
-  const scrollLeft = () => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollBy({
-        left: -window.innerWidth * 0.9,
-        behavior: "smooth",
-      });
-    }
-  };
-
-  const scrollRight = () => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollBy({
-        left: window.innerWidth * 0.9,
-        behavior: "smooth",
-      });
-    }
-  };
-
-  useEffect(() => {
-    const handleKeyDown = (e) => {
-      if (e.key === "Escape") {
-        setPopupData(null);
-      }
-    };
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, []);
-
-  const handleTileClick = (data) => {
-    setPopupData(data);
-  };
-
+const Home = () => {
   return (
     <Layout>
-      <div className="team-section">
-        <h1 className="team-title">Our Team</h1>
-        <div className="team-float">
-          <div
-            className="job-tile"
-            onClick={() =>
-              handleTileClick({
-                name: "Malcolm Kanter, MD",
-                role: "CEO/Founder",
-                image: malcolmProfile,
-              })
-            }
-          >
-            <img
-              src={malcolmProfile}
-              className="team-pic"
-              alt="Malcolm Kanter"
-            />
-            <h2 className="name-title">Malcolm Kanter, MD</h2>
-            <h1 className="job-title">CEO/Founder</h1>
-            <FaLongArrowAltRight className="arrow-link" />
-          </div>
-          <div
-            className="job-tile"
-            onClick={() =>
-              handleTileClick({
-                name: "Anthony Trasmundi",
-                role: "Chief Operating Officer",
-                image: anthonyProfile,
-              })
-            }
-          >
-            <img
-              src={anthonyProfile}
-              className="team-pic"
-              alt="Anthony Trasmundi"
-            />
-            <h2 className="name-title">Anthony Trasmundi</h2>
-            <h1 className="job-title">Chief Operating Officer</h1>
-            <FaLongArrowAltRight className="arrow-link" />
-          </div>
-          <div
-            className="job-tile"
-            onClick={() =>
-              handleTileClick({
-                name: "Jacob",
-                role: "Director of Behavioral Health",
-                image: jacobProfile,
-              })
-            }
-          >
-            <img src={jacobProfile} className="team-pic" alt="Jacob" />
-            <h2 className="name-title">Jacob</h2>
-            <h1 className="job-title">Director of Behavioral Health</h1>
-            <FaLongArrowAltRight className="arrow-link" />
-          </div>
-        </div>
+      <div className="video-section">
+        <video controls className="home-vid">
+          <source
+            src="/bridge-medical/assets/videos/landing-page-vid.MOV"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
       </div>
       <img
         className="home-pic"
-        src={homepageImage}
+        src="/bridge-medical/assets/images/homepage-image.jpg"
         alt="Psychologist talking to patient"
       />
+      <div className="about-section">
+        <p className="about-paragraph">
+          BRIDGE MEDICAL is proud to offer its suite of mental health services
+          for those patients with concussion, traumatic head injury, Alzheimer’s
+          and other neurologic deficits. Our services include Neuropsychological
+          evaluations, Cognitive therapy, Psychotherapy both individual and
+          group, Psychiatry, Lifecoaching, and Pain management (coming soon).
+          All our services are offered via state-of-the-art telehealth services
+          as well as in-person visits as required. Our clinical staff are all
+          PhD-level psychologists and neuropsychologists as well as
+          board-certified psychiatry. We accept Worker’s Compensation, No Fault
+          Insurance, Medicare, BCBS, Private Pay, and various other commercial
+          insurances.
+        </p>
+      </div>
     </Layout>
   );
 };
 
-export default Team;
+export default Home;

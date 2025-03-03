@@ -7,10 +7,10 @@ const App = () => {
     <BrowserRouter basename="/bridge-medical">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="home" element={<Home />} />
         <Route path="team" element={<Team />} />
         <Route path="services" element={<Services />} />
         <Route path="jobs" element={<Jobs />} />
+        <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
