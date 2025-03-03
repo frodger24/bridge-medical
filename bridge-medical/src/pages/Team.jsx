@@ -51,14 +51,18 @@ const Team = () => {
               handleTileClick({
                 name: "Malcolm Kanter, MD",
                 role: "CEO/Founder",
-                image: "/bridge-medical/assets/images/malcolm-profile.jpg",
+                image: `${
+                  import.meta.env.BASE_URL
+                }assets/images/malcolm-profile.jpg`,
                 description:
                   "As CEO, Malcolm is the driver of Bridge Medical’s recent growth and transition. A physician by background, graduating medical school in South Africa, he trained in neurosurgery and completed his fellowship in TBI at Baylor College of Medicine in Houston, TX. Following his fellowship, Malcolm honed his business skills while working at New Medico, a privately held Neuro-rehabilitation company treating acute and post-acute TBI patients.",
               })
             }
           >
             <img
-              src="/bridge-medical/assets/images/malcolm-profile.jpg"
+              src={`${
+                import.meta.env.BASE_URL
+              }assets/images/malcolm-profile.jpg`}
               className="team-pic"
               alt="Malcolm Kanter"
             />
@@ -72,14 +76,18 @@ const Team = () => {
               handleTileClick({
                 name: "Anthony Trasmundi",
                 role: "Chief Operating Officer",
-                image: "/bridge-medical/assets/images/anthony-profile.jpg",
+                image: `${
+                  import.meta.env.BASE_URL
+                }assets/images/anthony-profile.jpg`,
                 description:
                   "As a seasoned Chief Operating Officer with over 20 years of experience in the healthcare industry, I am dedicated to driving operational excellence and fostering a culture of patient-centered care. My expertise lies in strategic planning, process optimization, and team leadership, ensuring that healthcare organizations deliver high-quality services efficiently and effectively.",
               })
             }
           >
             <img
-              src="/bridge-medical/assets/images/anthony-profile.jpg"
+              src={`${
+                import.meta.env.BASE_URL
+              }assets/images/anthony-profile.jpg`}
               className="team-pic"
               alt="Anthony Trasmundi"
             />
@@ -93,14 +101,16 @@ const Team = () => {
               handleTileClick({
                 name: "Jacob",
                 role: "Director of Behavioral Health",
-                image: "/bridge-medical/assets/images/jacob-profile.jpg",
+                image: `${
+                  import.meta.env.BASE_URL
+                }assets/images/jacob-profile.jpg`,
                 description:
                   "Meet Jacob our Director of Behavioral Health! With over a dozen years of experience in human services, Jacob has spent the last decade of his professional career dedicating himself to providing care to underserved and underrepresented communities.",
               })
             }
           >
             <img
-              src="/bridge-medical/assets/images/jacob-profile.jpg"
+              src={`${import.meta.env.BASE_URL}assets/images/jacob-profile.jpg`}
               className="team-pic"
               alt="Jacob"
             />
@@ -114,14 +124,18 @@ const Team = () => {
               handleTileClick({
                 name: "Dr. Spigelman",
                 role: "Clinical Psychologist / Neuro Psychologist",
-                image: "/bridge-medical/assets/images/spiegelman-profile.jpg",
+                image: `${
+                  import.meta.env.BASE_URL
+                }assets/images/spiegelman-profile.jpg`,
                 description:
                   "Dr. Spigelman is a clinical psychologist and neuropsychologist licensed in both New York and New Jersey.",
               })
             }
           >
             <img
-              src="/bridge-medical/assets/images/spiegelman-profile.jpg"
+              src={`${
+                import.meta.env.BASE_URL
+              }assets/images/spiegelman-profile.jpg`}
               className="team-pic"
               alt="Dr. Spigelman"
             />
@@ -136,7 +150,7 @@ const Team = () => {
 
       <img
         className="home-pic"
-        src="/bridge-medical/assets/images/homepage-image.jpg"
+        src={`${import.meta.env.BASE_URL}assets/images/homepage-image.jpg`}
         alt="Psychologist talking to patient"
       />
 
