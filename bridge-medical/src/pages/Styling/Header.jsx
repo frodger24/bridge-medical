@@ -15,11 +15,9 @@ const Header = () => {
           <img className="img-logo" src={logo} alt="Bridge Medical logo" />
         </Link>
       </div>
-
       <button className="menu-button" onClick={toggleMenu}>
         ☰
       </button>
-
       <ul className={`top-nav-bar-items ${menuOpen ? "show-menu" : ""}`}>
         <li>
           <NavLink

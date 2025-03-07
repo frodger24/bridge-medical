@@ -296,7 +296,7 @@ const Team = () => {
       )}
 
       <div className="provider-section">
-        <h2 className="prov-title">Departments & Therapists</h2>
+        <h2 className="prov-title">Our Providers</h2>
         <div className="provider-container">
           <button className="arrow-btn prev-arrow" onClick={scrollLeft}>
             <FaArrowLeft />

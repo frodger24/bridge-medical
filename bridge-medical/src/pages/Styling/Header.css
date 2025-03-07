@@ -17,7 +17,7 @@ body {
 .top-nav-bar {
   position: fixed;
   top: 0;
-  width: calc(100% - 17px);
+  width: 100%;
   padding: 12px 20px;
   background-color: white;
   border-bottom: 1px solid #ccc;
@@ -164,5 +164,49 @@ body {
   }
   .img-logo {
     max-width: 80px;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .top-nav-bar {
+    width: 100%;
+    padding: 8px 16px;
+  }
+  .top-nav-bar-items {
+    top: 50px;
+    right: 0;
+    width: 100%;
+  }
+  .menu-button {
+    margin-left: auto;
+  }
+  .top-nav-bar-items li {
+    width: 100%;
+  }
+  .full-clickable-link {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+  .img-logo {
+    max-width: 80px;
+  }
+}
+
+@media (max-width: 400px) and (orientation: landscape) {
+  .top-nav-bar {
+    padding: 8px 10px;
+  }
+  .top-nav-bar-items {
+    top: 45px;
+  }
+  .menu-button {
+    font-size: 24px;
+  }
+  .full-clickable-link {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+  .img-logo {
+    max-width: 70px;
   }
 }

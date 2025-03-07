@@ -13,10 +13,7 @@
   margin: 0 auto;
   text-align: left;
   display: grid;
-  /* 3 columns so "Contact", empty (if desired), and "Hours" line up 
-     with Manhattan, Bronx, Queens */
   grid-template-columns: repeat(3, 1fr);
-  /* Reduce gap so the 3rd column is closer to the center */
   gap: 1.5rem;
   padding: 5px 10%;
   color: black;
@@ -26,19 +23,18 @@
 }
 
 .contact-sec {
-  grid-column: 1; /* First column */
+  grid-column: 1;
   padding-left: 0;
 }
 
 .hours-sec {
-  grid-column: 3; /* Third column, aligns with Queens */
-  text-align: left; /* Ensure text is not pinned to the right */
+  grid-column: 3;
+  text-align: left;
 }
 
 .address-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* Match the gap so columns align across rows */
   gap: 1.5rem;
   padding: 1rem 10%;
   text-align: left;
@@ -59,7 +55,6 @@
 .map-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* Match the same gap */
   gap: 1.5rem;
   padding: 1rem 10%;
 }
@@ -80,7 +75,6 @@
   font-weight: bold;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .footer-content {
     grid-template-columns: 1fr;
@@ -124,6 +118,53 @@
   .legal-words {
     font-size: 12px;
     padding: 0 5px;
+    padding-left: 5%;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 8px 5%;
+    font-size: 14px;
+    text-align: center;
+  }
+  .address-section {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 8px 5%;
+    font-size: 14px;
+    text-align: center;
+  }
+  .map-section {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 8px 5%;
+  }
+  .legal-words {
+    font-size: 12px;
+    padding-left: 5%;
+  }
+}
+
+@media (max-width: 400px) and (orientation: landscape) {
+  .footer-content {
+    gap: 0.8rem;
+    padding: 6px 5%;
+    font-size: 12px;
+  }
+  .address-section {
+    gap: 0.8rem;
+    padding: 6px 5%;
+    font-size: 12px;
+  }
+  .map-section {
+    gap: 0.8rem;
+    padding: 6px 5%;
+  }
+  .legal-words {
+    font-size: 10px;
     padding-left: 5%;
   }
 }

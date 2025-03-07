@@ -7,7 +7,6 @@ const Services = () => {
   const defaultIndex = services.findIndex(
     (service) => service.name === "Neuro-Psychology"
   );
-
   const [selectedText, setSelectedText] = useState("");
   const [selectedIndex, setSelectedIndex] = useState(defaultIndex);
   const [isMorphing, setIsMorphing] = useState(false);
