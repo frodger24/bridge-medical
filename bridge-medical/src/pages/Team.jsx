@@ -214,13 +214,13 @@ const Team = () => {
             className="job-tile"
             onClick={() =>
               handleTileClick({
-                name: "Dr. Anna Spiegelman",
+                name: "Dr. Anna Spieglman",
                 role: "Clinical Psychologist / Neuro Psychologist",
                 image: `${
                   import.meta.env.BASE_URL
                 }assets/images/spiegelman-profile.jpg`,
                 description:
-                  "Dr. Spiegelman is a clinical psychologist and neuropsychologist licensed in both New York and New Jersey.",
+                  "Dr. Spieglman is a clinical psychologist and neuropsychologist licensed in both New York and New Jersey.",
               })
             }
           >
@@ -229,9 +229,9 @@ const Team = () => {
                 import.meta.env.BASE_URL
               }assets/images/spiegelman-profile.jpg`}
               className="team-pic"
-              alt="Dr. Anna Spiegelman"
+              alt="Dr. Anna Spieglman"
             />
-            <h2 className="name-title">Dr. Anna Spiegelman</h2>
+            <h2 className="name-title">Dr. Anna Spieglman</h2>
             <h1 className="job-title">
               Clinical Psychologist / Neuro Psychologist
             </h1>
