@@ -56,38 +56,58 @@ const Team = () => {
     {
       title: "Neuropsychology Department",
       members: [
-        "Dr. Lindsay Chatmon",
-        "Dr. David Levy",
-        'Dr. Abdul "Shakoor" Ahmed',
-        "Dr. Chiyoko Frank",
-        "Dr. Shanna Domond",
-        "Dr. Jamel Burroughs",
+        { name: "Dr. Lindsay Chatmon", eclipse: "93/113", specialty: "PHD" },
+        { name: "Dr. David Levy", eclipse: "97/129", specialty: "PSYD" },
+        {
+          name: 'Dr. Abdul "Shakoor" Ahmed',
+          eclipse: "54/121",
+          specialty: "PSYD",
+        },
+        { name: "Dr. Chiyoko Frank", eclipse: "36/127", specialty: "PHD" },
+        { name: "Dr. Shanna Domond", eclipse: "65/119", specialty: "PSYD" },
+        { name: "Dr. Jamel Burroughs", eclipse: "112/130", specialty: "PSYD" },
       ],
     },
     {
       title: "Psychiatry Department",
       members: [
-        "Dr. Evan Donin PMHNP-BC",
-        "Laura Bernal PMNHP",
-        "Dr. Gabriel Katz",
+        {
+          name: "Dr. Evan Donin PMHNP-BC",
+          eclipse: "65/119",
+          specialty: "PNP",
+        },
+        { name: "Laura Bernal PMNHP", eclipse: "90/114", specialty: "PNP" },
+        { name: "Dr. Gabriel Katz", eclipse: "11/111", specialty: "PNP" },
       ],
     },
     {
       title: "Psychology Department",
       members: [
-        "Jacob Miner LCSW",
-        "Lena Melendez LCSW",
-        "Alison Marion Hunt LCSW",
-        "Eric Guy LCSW",
-        "Denise Garcia LCSW",
-        "Maureen Bock LCSW",
-        "Fabiola Cuenca LCSW",
-        "Madison Greenfield LCSW",
-        "Jim Oher LCSW",
-        "Carina Sacks LMSW",
-        "Areliez Estevez LMSW",
-        "Wessner Petitfrer LMSW",
-        "Dayadriz Brito LMSW",
+        { name: "Jacob Miner LCSW", eclipse: "70/122", specialty: "LCSW" },
+        { name: "Lena Melendez LCSW", eclipse: "52/124", specialty: "LCSW" },
+        {
+          name: "Alison Marion Hunt LCSW",
+          eclipse: "56/113",
+          specialty: "LCSW",
+        },
+        { name: "Eric Guy LCSW", eclipse: "109/117", specialty: "LCSW" },
+        { name: "Denise Garcia LCSW", eclipse: "113/125", specialty: "LCSW" },
+        { name: "Maureen Bock LCSW", eclipse: "128/129", specialty: "LCSW" },
+        { name: "Fabiola Cuenca LCSW", eclipse: "76/132", specialty: "LCSW" },
+        {
+          name: "Madison Greenfield LCSW",
+          eclipse: "123/135",
+          specialty: "LCSW",
+        },
+        { name: "Jim Oher LCSW", eclipse: "140/148", specialty: "LCSW" },
+        { name: "Carina Sacks LMSW", eclipse: "100/124", specialty: "LMSW" },
+        { name: "Areliez Estevez LMSW", eclipse: "101/125", specialty: "LMSW" },
+        {
+          name: "Wessner Petitfrer LMSW",
+          eclipse: "75/128",
+          specialty: "LMSW",
+        },
+        { name: "Dayadriz Brito LMSW", eclipse: "88/119", specialty: "LMSW" },
       ],
     },
     {
@@ -244,11 +264,13 @@ const Team = () => {
           </div>
         </div>
       </div>
+
       <img
         className="home-pic"
         src={`${import.meta.env.BASE_URL}assets/images/homepage-image.jpg`}
         alt="Psychologist talking to patient"
       />
+
       {popupData && (
         <div className="modal-overlay" onClick={() => setPopupData(null)}>
           <div
@@ -272,6 +294,7 @@ const Team = () => {
           </div>
         </div>
       )}
+
       <div className="provider-section">
         <h2 className="prov-title">Departments & Therapists</h2>
         <div className="provider-container">
@@ -279,14 +302,44 @@ const Team = () => {
             <FaArrowLeft />
           </button>
           <div className="provider-sec" ref={scrollRef}>
-            {departments.map((dept, index) => (
-              <div className="table-container" key={index}>
+            {departments.map((dept, dIndex) => (
+              <div className="table-container" key={dIndex}>
                 <h3>{dept.title}</h3>
-                <ul>
-                  {dept.members.map((member, idx) => (
-                    <li key={idx}>{member}</li>
-                  ))}
-                </ul>
+                {dept.title === "Cognitive Therapists" ? (
+                  <table className="provider-table">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {dept.members.map((member, mIndex) => (
+                        <tr key={mIndex}>
+                          <td>{member}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                ) : (
+                  <table className="provider-table">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Eclipse Provider #</th>
+                        <th>Specialty</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {dept.members.map((member, mIndex) => (
+                        <tr key={mIndex}>
+                          <td>{member.name}</td>
+                          <td>{member.eclipse}</td>
+                          <td>{member.specialty}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                )}
               </div>
             ))}
           </div>
