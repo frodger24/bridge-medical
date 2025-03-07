@@ -31,8 +31,7 @@ const Home = () => {
           as well as in-person visits as required. Our clinical staff are all
           PhD-level psychologists and neuropsychologists as well as
           board-certified psychiatry. We accept Worker’s Compensation, No Fault
-          Insurance, Medicare, BCBS, Private Pay, and various other commercial
-          insurances.
+          Insurance, Liens.
         </p>
       </div>
     </Layout>
