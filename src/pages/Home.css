@@ -1,0 +1,124 @@
+.video-section {
+  width: 100%; /* Set the desired width */
+  height: 100vh;
+  background-color: #1466cc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  color: #000000;
+}
+
+.vid-sec {
+  background-color: #ffffff;
+  width: 30%;
+  height: 60%;
+  border-radius: 30px;
+  position: relative;
+}
+
+.home-pic {
+  width: 100%; /* Ensure the image spans the full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 40vh; /* Limit the height to 80% of the viewport height */
+  object-fit: cover; /* Crop the image gracefully if necessary */
+}
+
+.home-vid {
+  padding-top: 5%;
+  border-radius: 30px;
+  width: 80%;
+  height: 80%;
+}
+
+.about-section {
+  width: 100%; /* Set the desired width */
+  height: 100vh;
+  background-color: #1466cc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-paragraph {
+  color: white;
+  max-width: 800px; /* Limit the width */
+  max-height: 600px; /* Limit the height */
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .video-section {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Small gaps around the sides */
+    box-sizing: border-box; /* Ensures padding doesn't affect dimensions */
+  }
+
+  @media screen and (max-width: 768px) {
+    .video-section {
+      width: 100%;
+      height: calc(100vh - 20px); /* Full height minus the top gap */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 10px 10px; /* Top gap of 20px, small gaps on the sides and bottom */
+      box-sizing: border-box; /* Ensures padding doesn't affect dimensions */
+    }
+
+    .home-vid {
+      width: 95%; /* Slightly smaller than full width to leave gaps */
+      height: 95vh; /* Almost full height with small gaps */
+      object-fit: cover; /* Ensures the video covers the available space */
+      border-radius: 10px; /* Soft rounded corners */
+    }
+
+    .home-pic {
+      max-height: 30vh;
+    }
+
+    .about-section {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .about-paragraph {
+      font-size: 18px;
+      max-width: 90%;
+      line-height: 1.5;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  /* iPhone SE width */
+  .about-section {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure full width */
+  }
+
+  .about-paragraph {
+    font-size: 16px; /* Slightly smaller for small screens */
+    width: 100%; /* Make sure it spans the container */
+    max-width: 90%; /* Prevents it from being too wide */
+    text-align: center; /* Ensures text is centered */
+    margin: 0 auto; /* Centers the paragraph within its container */
+    line-height: 1.5;
+    padding: 0 5%; /* Adds padding evenly on both sides */
+    box-sizing: border-box; /* Ensures padding doesn’t push content */
+  }
+}
