@@ -1,0 +1,40 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Global scrollbar styling */
+/* For Firefox: the first value is the thumb and the second is the track. */
+body {
+  scrollbar-color: #555 white;
+}
+
+/* For WebKit-based browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 10px;
+  /* Remove border if you prefer a solid thumb:
+  border: none; */
+}
+
+#root,
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* This container grows to fill available space */
+.content-container {
+  flex: 1;
+}
