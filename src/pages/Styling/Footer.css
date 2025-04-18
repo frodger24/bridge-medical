@@ -24,7 +24,6 @@
 
 .contact-sec {
   grid-column: 1;
-<<<<<<< HEAD
 }
 
 .hours-sec {
@@ -55,23 +54,18 @@
 
 .social-sec a:hover {
   text-decoration: underline;
-=======
   padding-left: 0;
 }
 
 .hours-sec {
   grid-column: 3;
   text-align: left;
->>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
 }
 
 .address-section {
   display: grid;
-<<<<<<< HEAD
   grid-template-columns: repeat(4, 1fr);
-=======
   grid-template-columns: repeat(3, 1fr);
->>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
   gap: 1.5rem;
   padding: 1rem 10%;
   text-align: left;
@@ -91,11 +85,8 @@
 
 .map-section {
   display: grid;
-<<<<<<< HEAD
   grid-template-columns: repeat(4, 1fr);
-=======
   grid-template-columns: repeat(3, 1fr);
->>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
   gap: 1.5rem;
   padding: 1rem 10%;
 }
@@ -105,10 +96,7 @@
 }
 
 .map-block h4 {
-<<<<<<< HEAD
-=======
   font-style: normal;
->>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
   font-size: 20px;
   text-align: center;
 }
@@ -161,10 +149,7 @@
   }
   .legal-words {
     font-size: 12px;
-<<<<<<< HEAD
-=======
     padding: 0 5px;
->>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
     padding-left: 5%;
   }
 }

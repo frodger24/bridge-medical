@@ -147,11 +147,7 @@ const Team = () => {
                   import.meta.env.BASE_URL
                 }assets/images/malcolm-pic.jpg`,
                 description:
-<<<<<<< HEAD
-                  "As the President/Owner of Bridge medical, Malcolm is the driver of Bridge Medical’s recent growth and transition. A physician by background, graduating medical school in South Africa, he trained in neurosurgery and completed his fellowship in TBI at Baylor College of Medicine in Houston, TX. Following his fellowship, Malcolm honed his business skills while working at New Medico, a privately held Neuro-rehabilitation company treating acute and post-acute TBI patients. Malcolm is the former CEO of HealthTrac, a company he built into the second largest mobile diagnostic services provider in the country, servicing the long-term care industry in six northeast states with over 170 employees and over 300 clients. During his 11-year tenure with HealthTrac, his leadership saw the Company experience significant growth while maintaining strong profit margins. Dr. Kanter was recognized in 2005 by the Nursing Homes of the New York Archdiocese for his efforts and accomplishments. Malcolm has extensive experience in healthcare consulting. As a founding partner at Allexian and CEO of Bridge Medical Group, he has been instrumental in strategic planning, operational evaluation and improvement, organizational turnaround as well as transaction and investment advice, generally focused toward growth-oriented middle market healthcare companies. His primary focus is on growth strategy through new markets and new product development, turnaround and acquisition and integration strategies. Malcolm has performed interim management roles at the C-suite level and is a senior consultant for the Gerson Lehrman Group. Malcolm has held prior positions as Managing Director at Match Point Partners and Project Partner at Promontory Growth and Innovation, serving as senior consultant on various healthcare projects. The most recent project completed in this capacity was a highly successful business process optimization project for a large three-hospital system in Northern FL. Malcolm’s deep and significant knowledge base extends to Physician Services, Medicare and Medicaid reimbursement and regulatory requirements, wound care, diagnostic testing, ambulatory surgical centers, medical devices and technology, clinical trials, staffing models, medical transcription, healthcare analytics, health and wellness, hospital profitability improvement, RCM, long term care and brain injury rehabilitation.",
-=======
                   "As CEO, Malcolm is the driver of Bridge Medical’s recent growth and transition. A physician by background, graduating medical school in South Africa, he trained in neurosurgery and completed his fellowship in TBI at Baylor College of Medicine in Houston, TX. Following his fellowship, Malcolm honed his business skills while working at New Medico, a privately held Neuro-rehabilitation company treating acute and post-acute TBI patients.",
->>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
               })
             }
           >
@@ -193,32 +189,6 @@ const Team = () => {
             className="job-tile"
             onClick={() =>
               handleTileClick({
-<<<<<<< HEAD
-                name: "Sophie Sassoon",
-                role: "Director of Business development",
-                image: `${
-                  import.meta.env.BASE_URL
-                }assets/images/sophie-pic.jpg`,
-                description:
-                  "Sophie, a true “force of nature”, honed her business development skills as a major fundraiser and events organizer for Charities in support of Israel. Amongst the beneficiaries of Sophie’s efforts were Israel’s soldiers and citizens including the Israeli Defense Force, The Hebrew University; various AIPAC related organizations as well as high tech medical and scientific entities.\n\nThis experience became the proving ground for Sophie’s ability to forge life long relationships with business leaders, dignitaries and politicians. Sophie has established investor relationships at the highest level, including her instrumental role in the development of a major airport in the Middle East.\n\nSophie, a fashion icon and entrepreneur in her own right, has developed a skill set in recognizing opportunity that many others fail to see. Her reach has become global.\n\nIt is these skills and relationships that Sophie now brings to Bridge Medical, the leading provider of cognitive and mental health services to patients with concussion, head injury and other neurologic deficits. Often one or two degrees from any person, Sophie is tireless in her work ethic and embraces challenges as opportunities for success, facilitating successful outcomes for her clients.",
-              })
-            }
-          >
-            <img
-              src={`${import.meta.env.BASE_URL}assets/images/sophie-pic.jpg`}
-              className="team-pic"
-              alt="Sophie Sassoon"
-            />
-            <h2 className="name-title">Sophie Sassoon</h2>
-            <h1 className="job-title">Director of Business development</h1>
-            <FaLongArrowAltRight className="arrow-link" />
-          </div>
-          <div
-            className="job-tile"
-            onClick={() =>
-              handleTileClick({
-=======
->>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
                 name: "Jacob Miner",
                 role: "Director of Behavioral Health",
                 image: `${
@@ -243,11 +213,7 @@ const Team = () => {
             onClick={() =>
               handleTileClick({
                 name: "Dr. Anna Spieglman",
-<<<<<<< HEAD
-                role: "Director of Neuropsychology ",
-=======
                 role: "Clinical Psychologist / Neuro Psychologist",
->>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
                 image: `${
                   import.meta.env.BASE_URL
                 }assets/images/spiegelman-profile.jpg`,
@@ -264,9 +230,6 @@ const Team = () => {
               alt="Dr. Anna Spieglman"
             />
             <h2 className="name-title">Dr. Anna Spieglman</h2>
-<<<<<<< HEAD
-            <h1 className="job-title">Director of Neuropsychology </h1>
-=======
             <h1 className="job-title">
               Clinical Psychologist / Neuro Psychologist
             </h1>
@@ -293,7 +256,6 @@ const Team = () => {
             />
             <h2 className="name-title">Sophie Sassoon</h2>
             <h1 className="job-title">Director of Business development</h1>
->>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
             <FaLongArrowAltRight className="arrow-link" />
           </div>
         </div>
@@ -328,8 +290,6 @@ const Team = () => {
           </div>
         </div>
       )}
-<<<<<<< HEAD
-=======
 
       <div className="provider-section">
         <h2 className="prov-title">Our Providers</h2>
@@ -384,7 +344,6 @@ const Team = () => {
           </button>
         </div>
       </div>
->>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
     </Layout>
   );
 };

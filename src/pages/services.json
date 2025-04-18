@@ -2,7 +2,6 @@
   {
     "name": "Neuro-Psychology",
     "description": [
-<<<<<<< HEAD
       "Bridge Medical provides comprehensive neuropsychological assessments, treatments, and support for adults and children who struggle with cognitive deficits. Neuropsychology is a subspecialty of clinical psychology that is focused on understanding the brain–behavior relationship. It seeks to uncover the cognitive, behavioral, and emotional difficulties that can result from known or suspected brain dysfunction. Neuropsychological evaluation consists of a comprehensive examination of cognitive and behavioral functioning. Evaluations comprise measures that are standardized, scored objectively, and have established psychometric properties. Bridge Medical’s neuropsychological evaluation includes a clinical interview with the patient, a collateral interview with caregivers/family, and a thorough review of relevant medical records. The evaluation is administered by paper/pencil and computer-based assessments, which measure the patient’s cognitive strengths and weaknesses.",
       "Intelligence",
       "Attention",
@@ -13,33 +12,20 @@
       "Visual Special Skills",
       "Fine Motor Skills",
       "Using the assessment results, Bridge Medical provides a report to the referring physician that includes a cognitive profile, detailed recommendations, objective information about the patient’s functioning, and any cognitive training recommended to improve functioning. Bridge Medical also offers neuropsychological re-evaluation, which effectively measures improvement associated with the cognitive treatment and determines if further treatment is warranted.",
-=======
->>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
       "Referral: Attorneys and doctors within the Company’s extensive network refer patients to Bridge Medical.",
       "Evaluation: Patients enter the program through a comprehensive neuropsychological assessment.",
       "Review: Following the evaluation, a comprehensive written report, together with statistical scoring, is provided to the patient and referring physician or attorney.",
       "Treatment Plan: If cognitive or psychological treatment is recommended, Bridge Medical will develop a personalized treatment program for the patient based upon his or her unique strengths and weaknesses.",
-<<<<<<< HEAD
-      "Treatment: One course of cognitive treatment is typically composed of four to six hours of weekly therapy, across a span of six to twelve months. Psychotherapy, if needed, can be administered weekly, bi‑weekly or monthly.",
-      "Progress: Cognitive rehabilitation assistants record each patient’s daily progress. Psychologists on staff also regularly assess patients and closely oversee all ongoing treatments.",
-      "Re‑Evaluation: Following the first course of treatment, after approximately six months, Bridge Medical conducts a re‑evaluation to assess the patient’s language and cognitive improvements. It is common for Bridge Medical to recommend a brief course of treatment that lasts less than one to three months to treat residual deficits.",
-      "Professional Assistance: Bridge Medical’s staff assists the patients on school/job‑related tasks as‑needed, and helps the patients with not only the cognitive retraining course, but also the demands of daily life. Bridge Medical’s goal is to restore patients to the highest level of function possible.",
-=======
       "Treatment: One course of cognitive treatment is typically composed of four to six hours of weekly therapy, across a span of six to twelve months. Psychotherapy, if needed, can be administered weekly, bi-weekly or monthly.",
       "Progress: Cognitive rehabilitation assistants record each patient’s daily progress. Psychologists on staff also regularly assess patients and closely oversee all ongoing treatments.",
       "Re-Evaluation: Following the first course of treatment, after approximately six months, Bridge Medical conducts a re-evaluation to assess the patient’s language and cognitive improvements. It is common for Bridge Medical to recommend a brief course of treatment that lasts less than one to three months to treat residual deficits.",
       "Professional Assistance: Bridge Medical’s staff assists the patients on school/job-related tasks as-needed, and helps the patients with not only the cognitive retraining course, but also the demands of daily life. Bridge Medical’s goal is to restore patients to the highest level of function possible.",
->>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
       "Legal Resources: Finally, Bridge Medical works closely with patients’ attorneys to facilitate the resolution of legal and insurance matters throughout the treatment process."
     ]
   },
   {
     "name": "Cognitive Therapy",
-<<<<<<< HEAD
-    "description": "Bridge Medical’s approach to cognitive rehabilitation is restorative in nature. Based upon an analysis of the functions assessed through the neuropsychological evaluation, Bridge Medical makes a determination as to the cognitive strengths and weaknesses presented by the patient and designs a program of intervention or treatment plan. Cognitive rehabilitation is based on the principle of neuroplasticity, meaning that the human brain is not a static organ but capable of physical change. These changes can occur through neural pathways and synapses after exposure to enriched environments. Cognitive remediation provides such an enriched environment.\n\nBridge Medical offers cognitive treatment that consists of exercises through the use of computer software based on a number of theoretical models of cognitive functions, such as attention, memory and executive function. The parameters usually monitored in the cognitive rehabilitation interventions used at Bridge Medical include reaction time, level of exercise difficulty, average number of correct responses, and average number of incorrect responses, among others. The proportion of successes in any session is closely monitored by our trained therapists. The overall purpose is to restore, reinforce, compensate and teach compensatory strategies in order to reach optimal cognitive improvement."
-=======
     "description": "Neuropsychology Testing\nBridge Medical provides comprehensive neuropsychological assessments, treatments, and support for adults and children who struggle with cognitive deficits. Neuropsychology is a subspecialty of clinical psychology that is focused on understanding the brain–behavior relationship. It seeks to uncover the cognitive, behavioral, and emotional difficulties that can result from known or suspected brain dysfunction. Neuropsychological evaluation consists of a comprehensive examination of cognitive and behavioral functioning. Evaluations comprise measures that are standardized, scored objectively, and have established psychometric properties. Bridge Medical’s neuropsychological evaluation includes a clinical interview with the patient, a collateral interview with caregivers/family, and a thorough review of relevant medical records. The evaluation is administered by paper/pencil and computer-based assessments, which measure the patient’s cognitive strengths and weaknesses. The assessments focus on the following areas of cognition:\n\n• Intelligence\n\n• Attention\n\n• Executive Functioning\n\n• Working Memory\n\n• Speed of Processing\n\n• Learning and Memory\n\n• Visual Special Skills\n\n• Fine Motor Skills\n\nUsing the assessment results, Bridge Medical provides a report to the referring physician that includes a cognitive profile, detailed recommendations, objective information about the patient’s functioning, and any cognitive training recommended to improve functioning. Bridge Medical also offers neuropsychological re-evaluation, which effectively measures improvement associated with the cognitive treatment and determines if further treatment is warranted.\n\nCognitive Rehabilitation\nBridge Medical’s approach to cognitive rehabilitation is restorative in nature. Based upon an analysis of the functions assessed through the neuropsychological evaluation, Bridge Medical makes a determination as to the cognitive strengths and weaknesses presented by the patient and designs a program of intervention or treatment plan. Cognitive rehabilitation is based on the principle of neuroplasticity, meaning that the human brain is not a static organ but capable of physical change. These changes can occur through neural pathways and synapses after exposure to enriched environments. Cognitive remediation provides such an enriched environment.\n\nBridge Medical offers cognitive treatment that consists of exercises through the use of computer software based on a number of theoretical models of cognitive functions, such as attention, memory and executive function. The parameters usually monitored in the cognitive rehabilitation interventions used at Bridge Medical include reaction time, level of exercise difficulty, average number of correct responses, and average number of incorrect responses, among others. The proportion of successes in any session is closely monitored by our trained therapists. The overall purpose is to restore, reinforce, compensate and teach compensatory strategies in order to reach optimal cognitive improvement."
->>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
   },
   {
     "name": "Psychology",
@@ -47,15 +33,11 @@
   },
   {
     "name": "Psychiatry",
-<<<<<<< HEAD
     "description": [
       "Treatment: Diagnosis and treatment for various mental health disorders pertaining to injuries sustained in car accidents, work‑related injuries, and assaults.",
       "Support: Providing emotional and behavioral support to individuals facing challenges.",
       "Advocacy: Advocating for mental health and well‑being.",
       "Combination of medical expertise and therapeutic approaches: Psychiatrists offer talk therapy, medications, strategies, and tailored treatments."
     ]
-=======
-    "description": "Psychiatry involves the diagnosis and treatment of mental disorders."
->>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
   }
 ]
