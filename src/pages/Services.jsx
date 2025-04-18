@@ -7,12 +7,20 @@ const Services = () => {
   const defaultIndex = services.findIndex(
     (service) => service.name === "Neuro-Psychology"
   );
+<<<<<<< HEAD
   const [selectedContent, setSelectedContent] = useState("");
+=======
+  const [selectedText, setSelectedText] = useState("");
+>>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
   const [selectedIndex, setSelectedIndex] = useState(defaultIndex);
   const [isMorphing, setIsMorphing] = useState(false);
 
   const displayText = (index) => {
+<<<<<<< HEAD
     setSelectedContent(services[index]?.description || "Invalid selection.");
+=======
+    setSelectedText(services[index]?.description || "Invalid selection.");
+>>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
     setSelectedIndex(index);
     setIsMorphing(true);
     setTimeout(() => setIsMorphing(false), 500);
@@ -24,6 +32,7 @@ const Services = () => {
     }
   }, []);
 
+<<<<<<< HEAD
   const renderContent = () => {
     if (Array.isArray(selectedContent)) {
       return (
@@ -41,6 +50,8 @@ const Services = () => {
       .map((para, idx) => <p key={idx}>{para}</p>);
   };
 
+=======
+>>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
   return (
     <Layout>
       <div className="services-section">
@@ -57,9 +68,14 @@ const Services = () => {
               </li>
             ))}
           </ul>
+<<<<<<< HEAD
 
           <div className={`services-textbox ${isMorphing ? "morph" : ""}`}>
             {renderContent()}
+=======
+          <div className={`services-textbox ${isMorphing ? "morph" : ""}`}>
+            {selectedText || "Select a service to see the details."}
+>>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
           </div>
         </div>
       </div>

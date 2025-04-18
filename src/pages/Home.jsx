@@ -21,6 +21,7 @@ const Home = () => {
         alt="Psychologist talking to patient"
       />
       <div className="about-section">
+<<<<<<< HEAD
         <div className="about-paragraph">
           <p>
             BRIDGE MEDICAL is proud to offer its suite of mental health services
@@ -67,6 +68,20 @@ const Home = () => {
             <li>Personal Injury</li>
           </ul>
         </div>
+=======
+        <p className="about-paragraph">
+          BRIDGE MEDICAL is proud to offer its suite of mental health services
+          for those patients with concussion, traumatic head injury, Alzheimer’s
+          and other neurologic deficits. Our services include Neuropsychological
+          evaluations, Cognitive therapy, Psychotherapy both individual and
+          group, Psychiatry, Lifecoaching, and Pain management (coming soon).
+          All our services are offered via state-of-the-art telehealth services
+          as well as in-person visits as required. Our clinical staff are all
+          PhD-level psychologists and neuropsychologists as well as
+          board-certified psychiatry. We accept Worker’s Compensation, No Fault
+          Insurance, Liens.
+        </p>
+>>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
       </div>
     </Layout>
   );

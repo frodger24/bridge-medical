@@ -1,5 +1,8 @@
 import React from "react";
+<<<<<<< HEAD
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
+=======
+>>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
 import "./Footer.css";
 
 const Footer = () => {
@@ -13,11 +16,15 @@ const Footer = () => {
           <p>Fax: 917-675-7449</p>
           <p>Email: info@bridge-medical.net</p>
         </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
         <div className="hours-sec">
           <p>Hours:</p>
           <p>8:00AM - 6:00PM</p>
         </div>
+<<<<<<< HEAD
 
         <div className="social-sec">
           <p>Follow us:</p>
@@ -42,6 +49,9 @@ const Footer = () => {
         </div>
       </div>
 
+=======
+      </div>
+>>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
       <div className="address-section">
         <div className="address-block">
           <p className="location-title">Manhattan</p>
@@ -58,6 +68,7 @@ const Footer = () => {
           <p>95-27 Jamaica Ave</p>
           <p>Queens, NY 11223</p>
         </div>
+<<<<<<< HEAD
         <div className="address-block">
           <p className="location-title">Staten Island</p>
           <p>4131 Richmond Avenue</p>
@@ -65,6 +76,9 @@ const Footer = () => {
         </div>
       </div>
 
+=======
+      </div>
+>>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
       <div className="map-section">
         <div className="map-block">
           <h4>Manhattan</h4>
@@ -73,10 +87,17 @@ const Footer = () => {
             width="100%"
             height="300"
             style={{ border: 0 }}
+<<<<<<< HEAD
             allowFullScreen
             loading="lazy"
             title="Manhattan Location"
           />
+=======
+            allowFullScreen=""
+            loading="lazy"
+            title="Manhattan Location"
+          ></iframe>
+>>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
         </div>
         <div className="map-block">
           <h4>Bronx</h4>
@@ -85,10 +106,17 @@ const Footer = () => {
             width="100%"
             height="300"
             style={{ border: 0 }}
+<<<<<<< HEAD
             allowFullScreen
             loading="lazy"
             title="Bronx Location"
           />
+=======
+            allowFullScreen=""
+            loading="lazy"
+            title="Bronx Location"
+          ></iframe>
+>>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
         </div>
         <div className="map-block">
           <h4>Queens</h4>
@@ -97,6 +125,7 @@ const Footer = () => {
             width="100%"
             height="300"
             style={{ border: 0 }}
+<<<<<<< HEAD
             allowFullScreen
             loading="lazy"
             title="Queens Location"
@@ -116,6 +145,14 @@ const Footer = () => {
         </div>
       </div>
 
+=======
+            allowFullScreen=""
+            loading="lazy"
+            title="Queens Location"
+          ></iframe>
+        </div>
+      </div>
+>>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
       <p className="legal-words">
         &copy; {currentDate} Bridge Medical. All rights reserved.
       </p>
@@ -124,4 +161,7 @@ const Footer = () => {
 };
 
 export default Footer;
+<<<<<<< HEAD
 
+=======
+>>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2

@@ -21,6 +21,7 @@ const Header = () => {
       <ul className={`top-nav-bar-items ${menuOpen ? "show-menu" : ""}`}>
         <li>
           <NavLink
+<<<<<<< HEAD
             to="/services"
             className="full-clickable-link"
             onClick={() => setMenuOpen(false)}
@@ -48,6 +49,8 @@ const Header = () => {
         </li>
         <li>
           <NavLink
+=======
+>>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
             to="/team"
             className="full-clickable-link"
             onClick={() => setMenuOpen(false)}
@@ -57,6 +60,18 @@ const Header = () => {
         </li>
         <li>
           <NavLink
+<<<<<<< HEAD
+=======
+            to="/services"
+            className="full-clickable-link"
+            onClick={() => setMenuOpen(false)}
+          >
+            Services
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+>>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
             to="/jobs"
             className="full-clickable-link"
             onClick={() => setMenuOpen(false)}

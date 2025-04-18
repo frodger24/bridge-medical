@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 /* Home.css - fixed to prevent content hiding under footer */
 
 .video-section {
   width: 100%; /* Full width */
+=======
+.video-section {
+  width: 100%; /* Set the desired width */
+>>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
   height: 100vh;
   background-color: #1466cc;
   display: flex;
@@ -23,10 +28,17 @@ h1 {
 }
 
 .home-pic {
+<<<<<<< HEAD
   width: 100%; /* Full width of container */
   height: auto; /* Maintain aspect ratio */
   max-height: 40vh; /* Limit height */
   object-fit: cover; /* Crop gracefully */
+=======
+  width: 100%; /* Ensure the image spans the full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 40vh; /* Limit the height to 80% of the viewport height */
+  object-fit: cover; /* Crop the image gracefully if necessary */
+>>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
 }
 
 .home-vid {
@@ -37,17 +49,26 @@ h1 {
 }
 
 .about-section {
+<<<<<<< HEAD
   width: 100%;
+=======
+  width: 100%; /* Set the desired width */
+  height: 100vh;
+>>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
   background-color: #1466cc;
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   /* Remove fixed heights; flex layout will push footer to bottom */
   padding: 60px 0; /* Top/bottom spacing */
+=======
+>>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
 }
 
 .about-paragraph {
   color: white;
+<<<<<<< HEAD
   max-width: 800px;
   font-size: 30px;
   font-weight: bold;
@@ -83,10 +104,65 @@ h1 {
   .about-paragraph {
     font-size: 18px;
     max-width: 90%;
+=======
+  max-width: 800px; /* Limit the width */
+  max-height: 600px; /* Limit the height */
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .video-section {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Small gaps around the sides */
+    box-sizing: border-box; /* Ensures padding doesn't affect dimensions */
+  }
+
+  @media screen and (max-width: 768px) {
+    .video-section {
+      width: 100%;
+      height: calc(100vh - 20px); /* Full height minus the top gap */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 10px 10px; /* Top gap of 20px, small gaps on the sides and bottom */
+      box-sizing: border-box; /* Ensures padding doesn't affect dimensions */
+    }
+
+    .home-vid {
+      width: 95%; /* Slightly smaller than full width to leave gaps */
+      height: 95vh; /* Almost full height with small gaps */
+      object-fit: cover; /* Ensures the video covers the available space */
+      border-radius: 10px; /* Soft rounded corners */
+    }
+
+    .home-pic {
+      max-height: 30vh;
+    }
+
+    .about-section {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .about-paragraph {
+      font-size: 18px;
+      max-width: 90%;
+      line-height: 1.5;
+    }
+>>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
   }
 }
 
 @media screen and (max-width: 375px) {
+<<<<<<< HEAD
   .about-section {
     padding: 20px;
   }
@@ -100,5 +176,26 @@ h1 {
     line-height: 1.5;
     padding: 0 5%;
     box-sizing: border-box;
+=======
+  /* iPhone SE width */
+  .about-section {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure full width */
+  }
+
+  .about-paragraph {
+    font-size: 16px; /* Slightly smaller for small screens */
+    width: 100%; /* Make sure it spans the container */
+    max-width: 90%; /* Prevents it from being too wide */
+    text-align: center; /* Ensures text is centered */
+    margin: 0 auto; /* Centers the paragraph within its container */
+    line-height: 1.5;
+    padding: 0 5%; /* Adds padding evenly on both sides */
+    box-sizing: border-box; /* Ensures padding doesn’t push content */
+>>>>>>> ad452a84984a3bf40b16c882f1f4743693cbdfb2
   }
 }
